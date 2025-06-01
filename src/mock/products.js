@@ -39,4 +39,5 @@ export const products = [
     image: 'https://via.placeholder.com/400x300?text=Jabon+Rosas',
     ingredients: ['Aceite de jojoba', 'Manteca de cacao', 'Aceite esencial de rosa', 'Pétalos de rosa secos']
   }
+  
 ];

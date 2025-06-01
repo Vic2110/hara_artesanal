@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { loginUser } from '../utils/api'; // Importar la función simulada
-
+import { loginUser } from '../utils/api';
 const AuthLogin = ({ onNavigate }) => {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [loading, setLoading] = useState(false);
@@ -16,8 +15,7 @@ const AuthLogin = ({ onNavigate }) => {
       const result = await loginUser(formData);
       if (result.success) {
         alert(result.message);
-        // Aquí podrías guardar el token o estado de autenticación
-        onNavigate('home'); // Redirigir al inicio después del login
+        onNavigate('home'); 
       } else {
         alert('Error al iniciar sesión (simulado)');
       }

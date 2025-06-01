@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { registerUser } from '../utils/api'; // Importar la función simulada
+import { registerUser } from '../utils/api'; 
 
 const AuthRegister = ({ onNavigate }) => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '', confirmPassword: '' });
@@ -20,7 +20,7 @@ const AuthRegister = ({ onNavigate }) => {
       const result = await registerUser(formData);
       if (result.success) {
         alert(result.message);
-        onNavigate('login'); // Redirigir al login después del registro
+        onNavigate('login'); 
       } else {
         alert('Error al registrar usuario (simulado)');
       }
